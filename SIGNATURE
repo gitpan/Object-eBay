@@ -1,0 +1,40 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.44.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 bd3e7b06c7e9b9d1c5c73389446d599601760ceb Build.PL
+SHA1 f1a201cb4ae3ee88d8c0cc56325103c8b66e25e1 Changes
+SHA1 5a9463567a6f61675545718ed05da182a3640944 MANIFEST
+SHA1 e486d943d57be21623d0fac2dc0705534a1458d4 META.yml
+SHA1 a359d4072690a21ce63e4b393bdbc19d72b6be5a Makefile.PL
+SHA1 3ec92118b5fd77249564f4dcf2fd164d2f54beae README
+SHA1 09acbffa9c3e52d294a89cf7417e9818cc4580ae lib/Object/eBay.pm
+SHA1 4901489755f82a44c4d76efdb8c47fc933c97bda lib/Object/eBay/Currency.pm
+SHA1 0f57ae5a8532d306c5dc0a9d0a84880d3766232c lib/Object/eBay/Item.pm
+SHA1 a6aaecd950fac5cf0c32e379ed43beb1cce05753 lib/Object/eBay/ListingDetails.pm
+SHA1 5389c3f9e11ad0819b0cfddef4e64fae26582d74 lib/Object/eBay/SellingStatus.pm
+SHA1 04e4e54edf6b6a5255be6fa52e227478b6c16167 lib/Object/eBay/User.pm
+SHA1 c8f215c180d51f0bb42bee5cb94bd112d0020d84 t/0-signature.t
+SHA1 d890a303c1d87885134df5022ec20163849d770e t/00-load.t
+SHA1 bd965ce39bce6849bf02ead5b734414f961a3236 t/01-name-conversion.t
+SHA1 08d92624a17608ec07e810875380884698e2b03b t/pod-coverage.t
+SHA1 0190346d7072d458c8a10a45c19f86db641dcc48 t/pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+
+iD8DBQFEFdfd2SxmMIGsLdwRAjqwAJ9UkUkHzQsROB2hwbwqsrT/wfeNMgCfSdO6
+4weSsKHEA1UDh2bQQ3p/KtI=
+=31iX
+-----END PGP SIGNATURE-----

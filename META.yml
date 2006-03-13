@@ -1,0 +1,33 @@
+---
+name: Object-eBay
+version: 0.0.1
+author:
+  - 'Michael Hendricks  <michael@ndrix.org>'
+abstract: Object-oriented interface to the eBay API
+license: perl
+requires:
+  Class::Std: 0.0.8
+  Net::eBay: 0.28
+  Scalar::Util: 1.02
+build_requires:
+  Test::More: 0
+provides:
+  Object::eBay:
+    file: lib/Object/eBay.pm
+    version: 0.0.1
+  Object::eBay::Currency:
+    file: lib/Object/eBay/Currency.pm
+    version: 0.0.1
+  Object::eBay::Item:
+    file: lib/Object/eBay/Item.pm
+    version: 0.0.1
+  Object::eBay::ListingDetails:
+    file: lib/Object/eBay/ListingDetails.pm
+    version: 0.0.1
+  Object::eBay::SellingStatus:
+    file: lib/Object/eBay/SellingStatus.pm
+    version: 0.0.1
+  Object::eBay::User:
+    file: lib/Object/eBay/User.pm
+    version: 0.0.1
+generated_by: Module::Build version 0.2611
