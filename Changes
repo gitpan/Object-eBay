@@ -1,6 +1,17 @@
 ---
+version : 0.0.3
+date    : Wed Apr 25 15:40:32 MDT 2007
+changes :
+    FIXES:
+        - Object::eBay::Currency correctly supports boolean context
+    NEW:
+        - buy_it_now_price() method on Item
+        - pictures() method on Item to get picture URLs
+        - mention that source code is available with Git
+        - mention paid development
+---
 version : 0.0.2
-date    :
+date    : Tue Mar 14 08:28:16 MST 2006
 changes :
     FIXES:
         - Correctly handle warnings from eBay API calls
@@ -12,4 +23,5 @@ changes :
 version : 0.0.1
 date    : Mon Mar 13 13:36:18 MST 2006
 changes :
-    - First version
+    NEW:
+        - First version
