@@ -10,11 +10,13 @@ lib/Object/eBay/Item.pm
 lib/Object/eBay/ListingDetails.pm
 lib/Object/eBay/SellingStatus.pm
 lib/Object/eBay/User.pm
-t/0-signature.t
 t/00-load.t
 t/01-name-conversion.t
 t/10-boolean.t
 t/10-currency.t
+t/20-item-is_ended.t
+t/20-item-item_id.t
+t/20-listing_details-end_datetime.t
 t/pod-coverage.t
 t/pod.t
 Makefile.PL

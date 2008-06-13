@@ -1,5 +1,5 @@
 package Object::eBay;
-our $VERSION = '0.0.3';
+our $VERSION = '0.1.0';
 
 use Class::Std; {
     use warnings;
@@ -163,7 +163,7 @@ use Class::Std; {
     }
 
     #############################################################################
-    # Usage     : __PACKAGE__->simple_attributes('title', 'quantity')
+    # Usage     : __PACKAGE__->simple_attributes('Title', 'Quantity')
     # Purpose   : Define simple attributes for an Object::eBay subclass
     # Returns   : none
     # Arguments : a list of method names to implement
@@ -236,12 +236,6 @@ __END__
 =head1 NAME
  
 Object::eBay - Object-oriented interface to the eBay API
- 
- 
-=head1 VERSION
- 
-This documentation refers to Object::eBay version 0.0.3
- 
  
 =head1 SYNOPSIS
 
@@ -475,7 +469,8 @@ None known.
 =head1 HELPING OUT
 
 The latest source code for Object-eBay is available with git from
-L<git://ndrix.com/Object-eBay>
+L<git://ndrix.com/Object-eBay>.  You may also browse the repository
+at L<http://git.ndrix.com/?p=Object-eBay;a=summary>.
 
 If you have any patches, please submit them through the RT bug tracking
 interface see L</BUGS AND LIMITATIONS>.  Right now, the most needed assistance
@@ -553,6 +548,9 @@ L<http://www.ndrix.com>
 =head1 ACKNOWLEDGEMENTS
 
 JJ Games for sponsoring the original development L<http://www.jjgames.com>.
+
+Video Game Price Charts for sponsoring further development
+L<http://www.videogamepricecharts.com>.
 
 Igor Chudov for writing Net::eBay.
 

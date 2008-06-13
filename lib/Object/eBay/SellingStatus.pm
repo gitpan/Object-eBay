@@ -1,5 +1,5 @@
 package Object::eBay::SellingStatus;
-our $VERSION = '0.0.3';
+our $VERSION = '0.1.0';
 
 use Class::Std; {
     use warnings;
@@ -11,6 +11,7 @@ use Class::Std; {
     sub api_call       { q{} };
     sub response_field { q{} };
 
+    __PACKAGE__->simple_attributes( 'ListingStatus', 'QuantitySold' );
     __PACKAGE__->complex_attributes({
         CurrentPrice => {
             class => 'Currency',
@@ -28,11 +29,6 @@ __END__
 =head1 NAME
 
 Object::eBay::SellingStatus - Represents an item's selling status
-
-=head1 VERSION
-
-This documentation refers to Object::eBay::SellingStatus version 0.0.3
-
 
 =head1 SYNOPSIS
 
@@ -60,6 +56,26 @@ is probably going to be in U.S. Dollars.
 
 Returns an L<Object::eBay::Currency> object indicating the price of an item.
 The price will be in whatever currency the seller designated.
+
+=head2 listing_status
+
+Returns one of the following statuses about the listing.  See eBay's
+GetItem documentation at
+L<http://developer.ebay.com/DevZone/XML/docs/Reference/eBay/GetItem.html> for
+the meaning of each term.
+
+    * Active
+    * Completed
+    * Ended
+    * Custom (eBay internal or future use only)
+    * CustomCode (eBay internal or future use only)
+
+See also L<Object::eBay::Item/is_ended>.
+
+=head2 quantity_sold
+
+Returns the number of items sold during this auction.  If the auction had a
+successful buyer, the value will be greater than 0.  Otherwise, it will be 0.
 
 =head1 DIAGNOSTICS
 
