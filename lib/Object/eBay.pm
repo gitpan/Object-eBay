@@ -1,5 +1,5 @@
 package Object::eBay;
-our $VERSION = '0.1.0';
+our $VERSION = '0.2.0';
 
 use Class::Std; {
     use warnings;
@@ -61,6 +61,20 @@ use Class::Std; {
 
             $inputs_for{$ident}{$input} = $new_value;
         }
+    }
+    sub _make_datetime {
+        my ($self, $iso) = @_;
+        require DateTime;
+        my ($y, $m, $d, $h, $min, $s) = split /[-T:.]/, $iso;
+        return DateTime->new(
+            year      => $y,
+            month     => $m,
+            day       => $d,
+            hour      => $h,
+            minute    => $min,
+            second    => $s,
+            time_zone => 'UTC',
+        );
     }
 
     ##########################################################################

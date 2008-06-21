@@ -1,5 +1,5 @@
 package Object::eBay::Boolean;
-our $VERSION = '0.1.0';
+our $VERSION = '0.2.0';
 
 use Class::Std; {
     use warnings;
@@ -25,6 +25,9 @@ use Class::Std; {
         my ($self) = @_;
         return $self->get_value();
     }
+
+    sub true  { shift->new({ object_details => 'true' })  }
+    sub false { shift->new({ object_details => 'false' }) }
 }
 
 1;
@@ -38,7 +41,7 @@ Object::eBay::Boolean - Represents a boolean return value
 =head1 SYNOPSIS
 
     # assuming that $item is an Object::eBay::Item object
-    my $private = $item->seller->feedback_private();
+    my $private = $item->seller->is_feedback_private();
     
     # In string context, yields 'true' or 'false'
     print "Is the feedback private? $private\n";
@@ -60,6 +63,16 @@ expected.  In string context, the value is eBay's literal 'true' or 'false'
 value.
 
 =head1 METHODS 
+
+=head2 true
+
+A class method that returns a new L<Object::eBay::Boolean> object representing
+true.
+
+=head2 false
+
+A class method that returns a new L<Object::eBay::Boolean> object representing
+false.
 
 =head2 as_boolean
 
