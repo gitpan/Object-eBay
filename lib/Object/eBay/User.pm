@@ -1,5 +1,5 @@
 package Object::eBay::User;
-our $VERSION = '0.3.2';
+our $VERSION = '0.4.0';
 
 use Class::Std; {
     use warnings;
@@ -11,9 +11,18 @@ use Class::Std; {
 
     __PACKAGE__->simple_attributes(qw{
         FeedbackScore
+        UserID
     });
 
     __PACKAGE__->complex_attributes({
+        Email => {
+            undefined_value_ok => 1,
+            convert_value => sub {
+                my $email = shift;
+                return if defined($email) and $email eq 'Invalid Request';
+                return $email;
+            },
+        },
         FeedbackPrivate => {
             class => 'Boolean',
         }
@@ -51,15 +60,24 @@ Requires a single hashref as the argument.  The hashref should contain a key
 'user_id' whose value is the ID of the user you want the new object to
 represent.
 
+=head2 email
+
+Returns the user's email address if available.  If it's not available, returns
+C<undef>.
+
 =head2 feedback_score
 
-Returns an integere indicating the user's feedback score.
+Returns an integer indicating the user's feedback score.
 
 =head2 is_feedback_private
 
 Returns an L<Object::eBay::Boolean> object representing 'true' if the user's
 feedback score is private.  Returns 'false' if the user's feedback score is
 public.
+
+=head2 user_id
+
+Returns the user's name (username).
  
 =head1 DIAGNOSTICS
  

@@ -1,4 +1,15 @@
 ---
+version : 0.4.0
+date    :
+changes :
+    FIXES:
+        - minor documentation corrections
+    NEW:
+        - support for retrieving the number of bids on an auction
+        - support for retrieving the current high bidder on an auction
+        - support for retrieving a user's email address
+        - support for retrieving a user's ID (username)
+---
 version : 0.3.2
 date    : Wed Jul 16 17:32:22 MDT 2008
 changes :
