@@ -1,5 +1,5 @@
 package Object::eBay;
-our $VERSION = '0.4.0';
+our $VERSION = '0.5.0';
 
 use Class::Std; {
     use warnings;
@@ -527,6 +527,10 @@ You can find documentation for this module with the perldoc command.
 You can also look for information at:
 
 =over 4
+
+=item * GitHub
+
+L<http://github.com/mndrix/Object-eBay>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 

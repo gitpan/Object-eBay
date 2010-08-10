@@ -1,6 +1,6 @@
 ---
 name: Object-eBay
-version: 0.4.0
+version: 0.5.0
 author:
   - 'Michael Hendricks  <michael@ndrix.com>'
 abstract: Object-oriented interface to the eBay API
@@ -16,31 +16,34 @@ build_requires:
 provides:
   Object::eBay:
     file: lib/Object/eBay.pm
-    version: 0.4.0
+    version: 0.5.0
   Object::eBay::Attribute:
     file: lib/Object/eBay/Attribute.pm
-    version: 0.4.0
+    version: 0.5.0
   Object::eBay::Attributes:
     file: lib/Object/eBay/Attributes.pm
-    version: 0.4.0
+    version: 0.5.0
   Object::eBay::Boolean:
     file: lib/Object/eBay/Boolean.pm
-    version: 0.4.0
+    version: 0.5.0
+  Object::eBay::Condition:
+    file: lib/Object/eBay/Condition.pm
+    version: 0.5.0
   Object::eBay::Currency:
     file: lib/Object/eBay/Currency.pm
-    version: 0.4.0
+    version: 0.5.0
   Object::eBay::Item:
     file: lib/Object/eBay/Item.pm
-    version: 0.4.0
+    version: 0.5.0
   Object::eBay::ListingDetails:
     file: lib/Object/eBay/ListingDetails.pm
-    version: 0.4.0
+    version: 0.5.0
   Object::eBay::SellingStatus:
     file: lib/Object/eBay/SellingStatus.pm
-    version: 0.4.0
+    version: 0.5.0
   Object::eBay::User:
     file: lib/Object/eBay/User.pm
-    version: 0.4.0
+    version: 0.5.0
 generated_by: Module::Build version 0.3
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
